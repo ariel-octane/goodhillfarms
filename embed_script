@@ -1,0 +1,79 @@
+<div
+  class="octane-ai-quiz"
+  data-quiz-id="i4qU9jcWStivGnAR"
+  data-embed-type="fullpage"
+  data-mobile-height="match_browser"
+  data-desktop-height="match_browser"
+></div>
+<script
+  src="https://app.octaneai.com/6vjhch8chwgl4gf2/quiz.js"
+  async
+  defer
+></script>
+
+<script defer>
+  document.addEventListener("octane.quiz.questionAnswered", function (e) {
+    function bestSellingGiftRedirect() {
+      bestSellingGiftBtn = document.querySelector(
+        '[title="Click to Shop Best Selling Gifts"]'
+      );
+      console.log(bestSellingGiftBtn);
+      if (bestSellingGiftBtn) {
+        bestSellingGiftBtn.addEventListener("click", function () {
+          window.location.replace(
+            "https://shop.goodhillfarms.com/pages/gifting-multiple-general"
+          );
+        });
+      }
+    }
+
+    function multipleGiftOrderRedirect() {
+      multipleGiftOrderBtn = document.querySelector(
+        '[title="Click To Create Multiple Gift Order"]'
+      );
+      console.log(multipleGiftOrderBtn);
+      if (multipleGiftOrderBtn) {
+        multipleGiftOrderBtn.addEventListener("click", function () {
+          window.location.replace(
+            "https://shop.goodhillfarms.com/pages/gifting-multiple-general"
+          );
+        });
+      }
+    }
+
+    function purchaseGiftCardsRedirect() {
+      purchaseGiftCardsBtn = document.querySelector(
+        '[title="Click To Purchase Gift Cards"]'
+      );
+      console.log(purchaseGiftCardsBtn);
+      if (purchaseGiftCardsBtn) {
+        purchaseGiftCardsBtn.addEventListener("click", function () {
+          window.location.replace(
+            "https://shop.goodhillfarms.com/pages/gifting-multiple-general"
+          );
+        });
+      }
+    }
+
+    function buildCustomBoxRedirect() {
+      buildCustomBoxBtn = document.querySelector(
+        '[title="Click To Build Custom Box"]'
+      );
+      console.log(buildCustomBoxBtn);
+      if (buildCustomBoxBtn) {
+        buildCustomBoxBtn.addEventListener("click", function () {
+          window.location.replace(
+            "https://shop.goodhillfarms.com/products/build-a-box"
+          );
+        });
+      }
+    }
+
+    setTimeout(() => {
+      bestSellingGiftRedirect();
+      multipleGiftOrderRedirect();
+      purchaseGiftCardsRedirect();
+      buildCustomBoxRedirect();
+    }, 1000);
+  });
+</script>
